@@ -1,0 +1,38 @@
+package com.services.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name ="t1007")
+public class t1007 {
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	private String c1002;
+	private String c1003;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getC1002() {
+		return c1002;
+	}
+	public void setC1002(String c1002) {
+		this.c1002 = c1002;
+	}
+	public String getC1003() {
+		return c1003;
+	}
+	public void setC1003(String c1003) {
+		this.c1003 = c1003;
+	}
+	
+	
+
+}
