@@ -48,6 +48,16 @@ public class customerController {
 	@Autowired
 	t1010Dao t1010Dao;
 	
+	public String hello() {
+	    StringBuilder message = new StringBuilder("Hello Google App Engine!");
+	    try {
+	      
+	    } catch (Exception e) {
+	      e.printStackTrace();
+	    }
+	      return message.toString();
+	    }
+	
 	@PostMapping(path="/signup",
 			consumes={MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE},
 			produces={MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_VALUE}
