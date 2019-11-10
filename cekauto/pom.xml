@@ -101,11 +101,8 @@
         <plugins>
             <!-- Package as an executable jar/war -->
             <plugin>
-                <!-- <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId> -->
-                <groupId>com.google.appengine</groupId>
-            	<artifactId>appengine-maven-plugin</artifactId>
-            	<version>1.9.9</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>                
 
                 <configuration>
                     <jvmArguments>
@@ -113,6 +110,11 @@
                     </jvmArguments>
                 </configuration>
             </plugin>
+            <plugin>
+        		<groupId>com.google.cloud.tools</groupId>
+        		<artifactId>appengine-maven-plugin</artifactId>
+        		<version>${appengine-maven-plugin-version}</version>
+     		</plugin>
         </plugins>
     </build>
     
